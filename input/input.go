@@ -1,8 +1,8 @@
 package input
 
 import (
-	"ebitextras/core"
-	"ebitextras/objectpool"
+	"github.com/coltentrainor/ebitextras/core"
+	"github.com/coltentrainor/ebitextras/objectpool"
 	"github.com/hajimehoshi/ebiten/v2"
 )
 
