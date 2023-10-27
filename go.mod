@@ -1,4 +1,4 @@
-module ebitextras
+module github.com/coltentrainor/ebitextras
 
 go 1.21
 
