@@ -91,3 +91,25 @@ func (vec Vector2i) Normalized() Vector2i {
 	}
 	return vec
 }
+
+func (vec Vector2) Equals(vec2 Vector2) bool {
+	if vec.X == vec2.X && vec.Y == vec2.Y {
+		return true
+	}
+	return false
+}
+
+func (vec Vector2i) Equals(vec2 Vector2i) bool {
+	if vec.X == vec2.X && vec.Y == vec2.Y {
+		return true
+	}
+	return false
+}
+
+func (vec Vector2) ToVector2i() Vector2i {
+	return Vector2i{X: int(vec.X), Y: int(vec.Y)}
+}
+
+func (vec Vector2i) ToVector2() Vector2 {
+	return Vector2{X: float64(vec.X), Y: float64(vec.Y)}
+}
